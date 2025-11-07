@@ -266,10 +266,10 @@ export default function Chatbot() {
                   <li className="text-left">Can you tell me about Cecilia's experience with prompt engineering?</li>
                   <li className="text-left">Does Cecilia have experience leading projects?</li>
                   <li className="text-left">What are some of Cecilia's biggest strengths?</li>
-                  <li className="text-left">Can you briefly summarize Cecilia's employment history?</li>
+                  <li className="text-left">Can you tell me about Cecilia's leadership skills?</li>
                 </ul>
               </div>
-              <p className="text-sm text-gray-600 dark:text-gray-400 italic text-left">
+              <p className="text-gray-700 dark:text-gray-300 text-left">
                 This bot does not store user data.
               </p>
             </div>
