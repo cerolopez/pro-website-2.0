@@ -1,65 +1,375 @@
-import Image from "next/image";
+import Hero from './components/Hero';
+import Image from 'next/image';
 
 export default function Home() {
   return (
-    <div className="flex min-h-screen items-center justify-center bg-zinc-50 font-sans dark:bg-black">
-      <main className="flex min-h-screen w-full max-w-3xl flex-col items-center justify-between py-32 px-16 bg-white dark:bg-black sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={100}
-          height={20}
-          priority
-        />
-        <div className="flex flex-col items-center gap-6 text-center sm:items-start sm:text-left">
-          <h1 className="max-w-xs text-3xl font-semibold leading-10 tracking-tight text-black dark:text-zinc-50">
-            To get started, edit the page.tsx file.
-          </h1>
-          <p className="max-w-md text-lg leading-8 text-zinc-600 dark:text-zinc-400">
-            Looking for a starting point or more instructions? Head over to{" "}
-            <a
-              href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
-            >
-              Templates
-            </a>{" "}
-            or the{" "}
-            <a
-              href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
-            >
-              Learning
-            </a>{" "}
-            center.
-          </p>
+    <div className="min-h-screen bg-white dark:bg-black">
+      <Hero />
+      <div className="pt-10 pb-16 px-4 sm:px-6 lg:px-8">
+        <div className="max-w-4xl mx-auto">
+          <div className="bg-white dark:bg-gray-800 rounded-lg border border-gray-300 dark:border-gray-700 px-4 md:px-16 lg:px-20 py-8 md:py-12">
+            <section id="about" className="pb-16 pt-8 scroll-mt-16 mx-4 md:mx-8 lg:mx-16">
+              <h2 className="text-3xl font-bold mb-12 text-center text-black dark:text-white">
+                About
+              </h2>
+              <div className="text-left space-y-12">
+                <div className="space-y-4">
+                  <p className="text-base text-black dark:text-gray-300">
+                  I've always been a maker at heart, whether I'm writing, designing, or building with code. That creative foundation combined with technical curiosity has shaped my career. With a BA in linguistics, an MS in computer science, and over a decade in digital content, I've found my niche making AI experiences intuitive and human-centered.
+                  </p>
+                  <p className="text-base text-black dark:text-gray-300">
+                    My career has taken me from content editing at an e-learning startup to Meta's research marketing team, and most recently into AI and prompt engineering. After being laid off in 2022 while enrolled in grad school, I was able to fully focus on my master's coursework at Northeastern, graduating in 2024 with a focus on NLP and HCI.
+                  </p>
+                  <p className="text-base text-black dark:text-gray-300">
+                    These days, I'm based in San Jose, working on projects that combine generative AI, UX design, and content strategy. I'm particularly drawn to work that makes powerful technology feel approachable and intuitive. Whether I'm crafting prompts, designing interfaces, or developing web applications, I'm always thinking about the humans on the other side of the screen.
+                  </p>
+                </div>
+              </div>
+            </section>
+
+            <div className="border-t border-gray-300 dark:border-gray-700 my-8"></div>
+
+            <section id="experience" className="pb-16 pt-8 scroll-mt-16 mx-4 md:mx-8 lg:mx-16">
+              <h2 className="text-3xl font-bold mb-12 text-center text-black dark:text-white">
+                Experience
+              </h2>
+              <div className="space-y-12">
+                {/* Job Entry 1 */}
+                <div className="flex flex-col sm:flex-row gap-6">
+                  <div className="w-full sm:w-1/3 sm:flex-shrink-0">
+                    <p className="text-sm text-gray-500 dark:text-gray-400 text-left">
+                      August 2025 – October 2025
+                    </p>
+                  </div>
+                  <div className="w-full sm:w-2/3">
+                    <h3 className="text-md font-bold text-black dark:text-white mb-2">
+                      AI/Prompt Engineer - Fleek
+                    </h3>
+                    <p className="text-sm text-black dark:text-gray-300 mb-3">
+                      Developing system instructions for AI character creation flow, including AI image generation and LLM chat. Bridging the gap between product and engineering by refining UX flows to be developer- and user-friendly
+                    </p>
+                    <div className="flex flex-wrap gap-2">
+                      <span className="px-3 py-1 rounded-full bg-gray-100 dark:bg-gray-700 text-xs text-gray-700 dark:text-gray-300">
+                        AI Characters
+                      </span>
+                      <span className="px-3 py-1 rounded-full bg-gray-100 dark:bg-gray-700 text-xs text-gray-700 dark:text-gray-300">
+                        LLM Chatbots
+                      </span>
+                      <span className="px-3 py-1 rounded-full bg-gray-100 dark:bg-gray-700 text-xs text-gray-700 dark:text-gray-300">
+                        AI Image Gen
+                      </span>
+                    </div>
+                  </div>
+                </div>
+
+                {/* Job Entry 2 */}
+                <div className="flex flex-col sm:flex-row gap-6">
+                  <div className="w-full sm:w-1/3 sm:flex-shrink-0">
+                    <p className="text-sm text-gray-500 dark:text-gray-400 text-left">
+                      May 2025 – August 2025
+                    </p>
+                  </div>
+                  <div className="w-full sm:w-2/3">
+                    <h3 className="text-md font-bold text-black dark:text-white mb-2">
+                      UX Writer & Content Designer - Google via Dexian
+                    </h3>
+                    <p className="text-sm text-black dark:text-gray-300 mb-3">
+                      Analyzed the quality of datasets used for LLM training and fine tuning. Developed LLM evaluation rubrics to quantify dataset quality. Fact-checked prompt responses generated by LLMs and human curators. Led small team of curators in generating golden datasets for LLM training
+                    </p>
+                    <div className="flex flex-wrap gap-2">
+                      <span className="px-3 py-1 rounded-full bg-gray-100 dark:bg-gray-700 text-xs text-gray-700 dark:text-gray-300">
+                        LLMs
+                      </span>
+                      <span className="px-3 py-1 rounded-full bg-gray-100 dark:bg-gray-700 text-xs text-gray-700 dark:text-gray-300">
+                        Dataset Curation
+                      </span>
+                      <span className="px-3 py-1 rounded-full bg-gray-100 dark:bg-gray-700 text-xs text-gray-700 dark:text-gray-300">
+                        Data Analysis
+                      </span>
+                    </div>
+                  </div>
+                </div>
+
+                {/* Job Entry 3 */}
+                <div className="flex flex-col sm:flex-row gap-6">
+                  <div className="w-full sm:w-1/3 sm:flex-shrink-0">
+                    <p className="text-sm text-gray-500 dark:text-gray-400 text-left">
+                      May 2024 – May 2025
+                    </p>
+                  </div>
+                  <div className="w-full sm:w-2/3">
+                    <h3 className="text-md font-bold text-black dark:text-white mb-2">
+                      Content Developer - SRI via AMF Media
+                    </h3>
+                    <p className="text-sm text-black dark:text-gray-300 mb-3">
+                      Curated web design and UX on external branded website to reduce friction in user experience. Conducted user interviews for internal comms site in order to identify pain points with the goal of improving employees' experiences and increasing efficiency. Created wire frames in Figma informed by UX design principles and research results to reduce the risk of having to either rebuild the product and incur additional cost or compromise quality
+                    </p>
+                    <div className="flex flex-wrap gap-2">
+                      <span className="px-3 py-1 rounded-full bg-gray-100 dark:bg-gray-700 text-xs text-gray-700 dark:text-gray-300">
+                        UX Research
+                      </span>
+                      <span className="px-3 py-1 rounded-full bg-gray-100 dark:bg-gray-700 text-xs text-gray-700 dark:text-gray-300">
+                        Content Design
+                      </span>
+                      <span className="px-3 py-1 rounded-full bg-gray-100 dark:bg-gray-700 text-xs text-gray-700 dark:text-gray-300">
+                        Content Strategy
+                      </span>
+                    </div>
+                  </div>
+                </div>
+
+                {/* Job Entry 4 */}
+                <div className="flex flex-col sm:flex-row gap-6">
+                  <div className="w-full sm:w-1/3 sm:flex-shrink-0">
+                    <p className="text-sm text-gray-500 dark:text-gray-400 text-left">
+                      August 2023 - May 2024
+                    </p>
+                  </div>
+                  <div className="w-full sm:w-2/3">
+                    <h3 className="text-md font-bold text-black dark:text-white mb-2">
+                      AI Content Writer - MotherTongue
+                    </h3>
+                    <p className="text-sm text-black dark:text-gray-300 mb-3">
+                      Evaluated, wrote, fact-checked, and curated responses generated by LLM in response to user queries at large search engine company.
+                    </p>
+                    <div className="flex flex-wrap gap-2">
+                      <span className="px-3 py-1 rounded-full bg-gray-100 dark:bg-gray-700 text-xs text-gray-700 dark:text-gray-300">
+                        Research & Fact-Checking
+                      </span>
+                      <span className="px-3 py-1 rounded-full bg-gray-100 dark:bg-gray-700 text-xs text-gray-700 dark:text-gray-300">
+                        LLM Data Curation
+                      </span>
+                    </div>
+                  </div>
+                </div>
+
+                {/* Job Entry 5 */}
+                <div className="flex flex-col sm:flex-row gap-6">
+                  <div className="w-full sm:w-1/3 sm:flex-shrink-0">
+                    <p className="text-sm text-gray-500 dark:text-gray-400 text-left">
+                      January 2020 - January 2023
+                    </p>
+                  </div>
+                  <div className="w-full sm:w-2/3">
+                    <h3 className="text-md font-bold text-black dark:text-white mb-2">
+                      Content Strategist/Manager - Meta
+                    </h3>
+                    <p className="text-sm text-black dark:text-gray-300 mb-3">
+                    Led large-scale website initiatives and UX optimization projects for the Meta Research site in collaboration with web vendors. Developed content strategy for the Meta Research blog in collaboration with program managers and research teams. Earned promotion in 2021.
+                    </p>
+                    <div className="flex flex-wrap gap-2">
+                      <span className="px-3 py-1 rounded-full bg-gray-100 dark:bg-gray-700 text-xs text-gray-700 dark:text-gray-300">
+                        Web Content Management
+                      </span>
+                      <span className="px-3 py-1 rounded-full bg-gray-100 dark:bg-gray-700 text-xs text-gray-700 dark:text-gray-300">
+                        Editorial Management
+                      </span>
+                      <span className="px-3 py-1 rounded-full bg-gray-100 dark:bg-gray-700 text-xs text-gray-700 dark:text-gray-300">
+                        Content Strategy
+                      </span>
+                    </div>
+                  </div>
+                </div>
+
+                {/* Job Entry 6 */}
+                <div className="flex flex-col sm:flex-row gap-6">
+                  <div className="w-full sm:w-1/3 sm:flex-shrink-0">
+                    <p className="text-sm text-gray-500 dark:text-gray-400 text-left">
+                    May 2018 - December 2019
+                    </p>
+                  </div>
+                  <div className="w-full sm:w-2/3">
+                    <h3 className="text-md font-bold text-black dark:text-white mb-2">
+                      Content Strategist - Meta via Crystal Equation
+                    </h3>
+                    <p className="text-sm text-black dark:text-gray-300 mb-3">
+                      Managed the Meta Research blog and website, ensuring editorial consistency, brand alignment, and a cohesive user experience while optimizing content for SEO. Collaborated with program managers to develop print brochures, flyers, blog content, and other collateral, ensuring editorial excellence, brand consistency, and timely delivery of marketing materials. Received headcount in 2019.
+                    </p>
+                    <div className="flex flex-wrap gap-2">
+                      <span className="px-3 py-1 rounded-full bg-gray-100 dark:bg-gray-700 text-xs text-gray-700 dark:text-gray-300">
+                        Project Management
+                      </span>
+                      <span className="px-3 py-1 rounded-full bg-gray-100 dark:bg-gray-700 text-xs text-gray-700 dark:text-gray-300">
+                        Writing & Editing
+                      </span>
+                      <span className="px-3 py-1 rounded-full bg-gray-100 dark:bg-gray-700 text-xs text-gray-700 dark:text-gray-300">
+                        Content Strategy
+                      </span>
+                    </div>
+                  </div>
+                </div>
+
+              </div>
+              <div className="flex justify-center mt-16">
+                <a
+                  href="https://www.linkedin.com/in/cecilia-r-lopez/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="px-6 py-3 rounded-lg bg-black dark:bg-white text-white dark:text-black text-sm hover:bg-gray-800 dark:hover:bg-gray-200 transition-colors"
+                >
+                  See Full Experience on LinkedIn
+                </a>
+              </div>
+            </section>
+
+            <div className="border-t border-gray-300 dark:border-gray-700 my-8"></div>
+
+            <section id="projects" className="pb-16 pt-8 scroll-mt-16 mx-4 md:mx-8 lg:mx-16">
+              <h2 className="text-3xl font-bold mb-12 text-center text-black dark:text-white">
+                Projects
+              </h2>
+              <div className="space-y-12">
+                {/* Project 1: Behalf Bot */}
+                <div className="flex flex-col sm:flex-row gap-6">
+                <div className="w-32 h-20 md:w-40 md:h-24 lg:w-48 lg:h-28 flex-shrink-0 relative overflow-hidden">
+                  <Image
+                    src="/behalf-bot.png"
+                    alt="Behalf Bot project"
+                    fill
+                    className="object-cover"
+                  />
+                </div>
+                  <div className="w-full sm:w-2/3">
+                    <h3 className="text-md font-bold text-black dark:text-white mb-2">
+                      Behalf Bot
+                    </h3>
+                    <div className="flex gap-4 mb-3">
+                      <a
+                        href="https://github.com/cerolopez/behalf-bot"
+                        className="text-sm text-gray-500 dark:text-gray-400 hover:text-gray-700 dark:hover:text-gray-300 flex items-center gap-1"
+                      >
+                        GitHub
+                        <svg
+                          className="w-3 h-3"
+                          fill="none"
+                          stroke="currentColor"
+                          viewBox="0 0 24 24"
+                        >
+                          <path
+                            strokeLinecap="round"
+                            strokeLinejoin="round"
+                            strokeWidth={2}
+                            d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"
+                          />
+                        </svg>
+                      </a>
+                      <a
+                        href="https://www.figma.com/design/jF0ICriuOsl4um4eCvzERg/Behalf-Bot?node-id=0-1&t=cArwpCXopZhExj0j-1"
+                        className="text-sm text-gray-500 dark:text-gray-400 hover:text-gray-700 dark:hover:text-gray-300 flex items-center gap-1"
+                      >
+                        Figma
+                        <svg
+                          className="w-3 h-3"
+                          fill="none"
+                          stroke="currentColor"
+                          viewBox="0 0 24 24"
+                        >
+                          <path
+                            strokeLinecap="round"
+                            strokeLinejoin="round"
+                            strokeWidth={2}
+                            d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"
+                          />
+                        </svg>
+                      </a>
+                    </div>
+                    <p className="text-sm text-black dark:text-gray-300 mb-3">
+                      Building off OpenAI's GPT-4, I curated responses by crafting instructions based off various use cases, providing data available on my LinkedIn and website. I built the chatbot UI on Flask using Python for the backend and vanilla JavaScript, and HTML/CSS for the frontend.
+                    </p>
+                    <div className="flex flex-wrap gap-2">
+                      <span className="px-3 py-1 rounded-full bg-gray-100 dark:bg-gray-700 text-xs text-gray-700 dark:text-gray-300">
+                        OpenAI API
+                      </span>
+                      <span className="px-3 py-1 rounded-full bg-gray-100 dark:bg-gray-700 text-xs text-gray-700 dark:text-gray-300">
+                        Prompt Engineering
+                      </span>
+                      <span className="px-3 py-1 rounded-full bg-gray-100 dark:bg-gray-700 text-xs text-gray-700 dark:text-gray-300">
+                        LLM Chatbot
+                      </span>
+                    </div>
+                  </div>
+                </div>
+
+                {/* Project 2: Professional Website 2.0 */}
+                <div className="flex flex-col sm:flex-row gap-6">
+                <div className="w-32 h-20 md:w-40 md:h-24 lg:w-48 lg:h-28 flex-shrink-0 relative overflow-hidden">
+                  <Image
+                    src="/professional-website.png"
+                    alt="Professional Website 2.0 project"
+                    fill
+                    className="object-cover"
+                  />
+                </div>
+                  <div className="w-full sm:w-2/3">
+                    <h3 className="text-md font-bold text-black dark:text-white mb-2">
+                      Professional Website 2.0
+                    </h3>
+                    <div className="flex gap-4 mb-3">
+                      <a
+                        href="#"
+                        className="text-sm text-gray-500 dark:text-gray-400 hover:text-gray-700 dark:hover:text-gray-300 flex items-center gap-1"
+                      >
+                        GitHub
+                        <svg
+                          className="w-3 h-3"
+                          fill="none"
+                          stroke="currentColor"
+                          viewBox="0 0 24 24"
+                        >
+                          <path
+                            strokeLinecap="round"
+                            strokeLinejoin="round"
+                            strokeWidth={2}
+                            d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"
+                          />
+                        </svg>
+                      </a>
+                      <a
+                        href="https://www.figma.com/design/di6DzC8FADCI7k7IQjl4qj/Professional-Website-2.0?node-id=0-1&t=LPqOuoykIy6uCpTz-1"
+                        className="text-sm text-gray-500 dark:text-gray-400 hover:text-gray-700 dark:hover:text-gray-300 flex items-center gap-1"
+                      >
+                        Figma
+                        <svg
+                          className="w-3 h-3"
+                          fill="none"
+                          stroke="currentColor"
+                          viewBox="0 0 24 24"
+                        >
+                          <path
+                            strokeLinecap="round"
+                            strokeLinejoin="round"
+                            strokeWidth={2}
+                            d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"
+                          />
+                        </svg>
+                      </a>
+                    </div>
+                    <p className="text-sm text-black dark:text-gray-300 mb-3">
+                      Using Cursor as my AI coding assistant, I designed and built a new professional website from scratch using React, Next.js, Tailwind CSS, and TypeScript. I also integrated Behalf Bot API to allow for a chatbot feature on the website.
+                    </p>
+                    <div className="flex flex-wrap gap-2">
+                      <span className="px-3 py-1 rounded-full bg-gray-100 dark:bg-gray-700 text-xs text-gray-700 dark:text-gray-300">
+                        Web Development
+                      </span>
+                      <span className="px-3 py-1 rounded-full bg-gray-100 dark:bg-gray-700 text-xs text-gray-700 dark:text-gray-300">
+                        Figma Prototyping
+                      </span>
+                      <span className="px-3 py-1 rounded-full bg-gray-100 dark:bg-gray-700 text-xs text-gray-700 dark:text-gray-300">
+                        LLM Chatbot
+                      </span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </section>
+          </div>
         </div>
-        <div className="flex flex-col gap-4 text-base font-medium sm:flex-row">
-          <a
-            className="flex h-12 w-full items-center justify-center gap-2 rounded-full bg-foreground px-5 text-background transition-colors hover:bg-[#383838] dark:hover:bg-[#ccc] md:w-[158px]"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={16}
-              height={16}
-            />
-            Deploy Now
-          </a>
-          <a
-            className="flex h-12 w-full items-center justify-center rounded-full border border-solid border-black/[.08] px-5 transition-colors hover:border-transparent hover:bg-black/[.04] dark:border-white/[.145] dark:hover:bg-[#1a1a1a] md:w-[158px]"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Documentation
-          </a>
-        </div>
-      </main>
+      </div>
+      <footer className="py-8 px-4 sm:px-6 lg:px-8 text-center">
+        <p className="text-xs text-gray-500 dark:text-gray-400">
+          © 2025 Cecilia Lopez. All rights reserved.
+        </p>
+      </footer>
     </div>
   );
 }
