@@ -256,7 +256,7 @@ export default function Chatbot() {
             </div>
             <div className="text-gray-700 dark:text-gray-300 space-y-4 text-left px-8 pb-8">
               <p className="text-left">
-                Behalf Bot is a GPT-4 chatbot instructed to answer career questions on behalf of Cecilia. Its responses are curated specifically for recruiters and hiring managers.
+                Behalf Bot is a GPT-4 chatbot instructed to answer career questions on behalf of Cecilia. It can tell you about her full employment history, academic career, online courses, certifications, skills, projects, referrals, and professional anecdotes.
               </p>
               <div className="text-left">
                 <p className="font-semibold mb-2 text-black dark:text-white text-left">

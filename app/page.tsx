@@ -18,7 +18,7 @@ export default function Home() {
                   I've always been a maker at heart, whether I'm writing, designing, or building with code. That creative foundation combined with technical curiosity has shaped my career. With a BA in linguistics, an MS in computer science, and over a decade in digital content, I've found my niche making AI experiences intuitive and human-centered.
                   </p>
                   <p className="text-base text-black dark:text-gray-300">
-                    My career has taken me from content editing at an e-learning startup to Meta's research marketing team, and most recently into AI and prompt engineering. After being laid off in 2022 while enrolled in grad school, I was able to fully focus on my master's coursework at Northeastern, graduating in 2024 with a focus on NLP and HCI.
+                    My career has taken me from content editing at an e-learning startup to Meta's research marketing team, and most recently into AI and prompt engineering. After being laid off in 2022 while enrolled in grad school, I was able to fully focus on my master's coursework at Northeastern, graduating in 2024 with a focus on NLP, frontend web development, and HCI/UX.
                   </p>
                   <p className="text-base text-black dark:text-gray-300">
                     These days, I'm based in San Jose, working on projects that combine generative AI, UX design, and content strategy. I'm particularly drawn to work that makes powerful technology feel approachable and intuitive. Whether I'm crafting prompts, designing interfaces, or developing web applications, I'm always thinking about the humans on the other side of the screen.
@@ -364,7 +364,7 @@ export default function Home() {
                       </a>
                     </div>
                     <p className="text-sm text-black dark:text-gray-300 mb-3">
-                      Using Cursor as my AI coding assistant, I designed and built a new professional website (this one!) from scratch using React, Next.js, Tailwind CSS, and TypeScript. I also integrated Behalf Bot API to allow for a chatbot feature on the website.
+                      Using Cursor as my AI coding assistant, I designed and built a new professional website (this one!) from scratch using React, Next.js, Tailwind CSS, and TypeScript. I also added a new chatbot feature on the website using the Behalf Bot API.
                     </p>
                     <div className="flex flex-wrap gap-2">
                       <span className="px-3 py-1 rounded-full bg-gray-100 dark:bg-gray-700 text-xs text-gray-700 dark:text-gray-300">
