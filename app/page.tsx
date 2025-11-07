@@ -235,6 +235,25 @@ export default function Home() {
                     </h3>
                     <div className="flex gap-4 mb-3">
                       <a
+                        href="https://behalf-bot.onrender.com/"
+                        className="text-sm text-gray-500 dark:text-gray-400 hover:text-gray-700 dark:hover:text-gray-300 flex items-center gap-1"
+                      >
+                        Website
+                        <svg
+                          className="w-3 h-3"
+                          fill="none"
+                          stroke="currentColor"
+                          viewBox="0 0 24 24"
+                        >
+                          <path
+                            strokeLinecap="round"
+                            strokeLinejoin="round"
+                            strokeWidth={2}
+                            d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"
+                          />
+                        </svg>
+                      </a>
+                      <a
                         href="https://github.com/cerolopez/behalf-bot"
                         className="text-sm text-gray-500 dark:text-gray-400 hover:text-gray-700 dark:hover:text-gray-300 flex items-center gap-1"
                       >
@@ -274,7 +293,7 @@ export default function Home() {
                       </a>
                     </div>
                     <p className="text-sm text-black dark:text-gray-300 mb-3">
-                      Building off OpenAI's GPT-4, I curated responses by crafting instructions based off various use cases, providing data available on my LinkedIn and website. I built the chatbot UI on Flask using Python for the backend and vanilla JavaScript, and HTML/CSS for the frontend.
+                      Building off OpenAI's GPT-4, I curated responses by crafting instructions based off various use cases, providing data available on my LinkedIn and website. I built the chatbot UI on Flask using Python for the backend and vanilla JavaScript, and HTML/CSS for the frontend. I also made an API to use on this website.
                     </p>
                     <div className="flex flex-wrap gap-2">
                       <span className="px-3 py-1 rounded-full bg-gray-100 dark:bg-gray-700 text-xs text-gray-700 dark:text-gray-300">
@@ -306,7 +325,7 @@ export default function Home() {
                     </h3>
                     <div className="flex gap-4 mb-3">
                       <a
-                        href="#"
+                        href="https://github.com/cerolopez/pro-website-2.0"
                         className="text-sm text-gray-500 dark:text-gray-400 hover:text-gray-700 dark:hover:text-gray-300 flex items-center gap-1"
                       >
                         GitHub
@@ -345,7 +364,7 @@ export default function Home() {
                       </a>
                     </div>
                     <p className="text-sm text-black dark:text-gray-300 mb-3">
-                      Using Cursor as my AI coding assistant, I designed and built a new professional website from scratch using React, Next.js, Tailwind CSS, and TypeScript. I also integrated Behalf Bot API to allow for a chatbot feature on the website.
+                      Using Cursor as my AI coding assistant, I designed and built a new professional website (this one!) from scratch using React, Next.js, Tailwind CSS, and TypeScript. I also integrated Behalf Bot API to allow for a chatbot feature on the website.
                     </p>
                     <div className="flex flex-wrap gap-2">
                       <span className="px-3 py-1 rounded-full bg-gray-100 dark:bg-gray-700 text-xs text-gray-700 dark:text-gray-300">
