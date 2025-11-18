@@ -39,7 +39,7 @@ export default function AICharactersPage() {
             This is a demo site for AI characters designed and developed by Cecilia Lopez.
           </p>
           <Link
-            href="#library"
+            href="/ai-characters/character-library"
             className="inline-block rounded-lg bg-black px-8 py-3 text-sm font-medium text-white transition-colors hover:bg-gray-800 dark:bg-white dark:text-black dark:hover:bg-gray-200"
           >
             Browse AI Characters
