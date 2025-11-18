@@ -221,7 +221,7 @@ export default function Home() {
               <div className="space-y-12">
                 {/* Project 1: AI Characters */}
                 <div className="flex flex-col sm:flex-row gap-6">
-                <div className="w-32 h-20 md:w-40 md:h-24 lg:w-48 lg:h-28 flex-shrink-0 relative overflow-hidden">
+                <div className="w-32 h-20 md:w-40 md:h-24 lg:w-48 lg:h-28 flex-shrink-0 relative overflow-hidden shadow-lg">
                   <Image
                     src="/ai-character-site.png"
                     alt="AI Characters website"
@@ -320,7 +320,7 @@ export default function Home() {
 
                 {/* Project 2: Behalf Bot */}
                 <div className="flex flex-col sm:flex-row gap-6">
-                <div className="w-32 h-20 md:w-40 md:h-24 lg:w-48 lg:h-28 flex-shrink-0 relative overflow-hidden">
+                <div className="w-32 h-20 md:w-40 md:h-24 lg:w-48 lg:h-28 flex-shrink-0 relative overflow-hidden shadow-lg">
                   <Image
                     src="/behalf-bot.png"
                     alt="Behalf Bot project"
@@ -410,7 +410,7 @@ export default function Home() {
 
                 {/* Project 3: Professional Website 2.0 */}
                 <div className="flex flex-col sm:flex-row gap-6">
-                <div className="w-32 h-20 md:w-40 md:h-24 lg:w-48 lg:h-28 flex-shrink-0 relative overflow-hidden">
+                <div className="w-32 h-20 md:w-40 md:h-24 lg:w-48 lg:h-28 flex-shrink-0 relative overflow-hidden shadow-lg">
                   <Image
                     src="/professional-website.png"
                     alt="Professional Website 2.0 project"
