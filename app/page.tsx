@@ -219,7 +219,106 @@ export default function Home() {
                 Projects
               </h2>
               <div className="space-y-12">
-                {/* Project 1: Behalf Bot */}
+                {/* Project 1: AI Characters */}
+                <div className="flex flex-col sm:flex-row gap-6">
+                <div className="w-32 h-20 md:w-40 md:h-24 lg:w-48 lg:h-28 flex-shrink-0 relative overflow-hidden">
+                  <Image
+                    src="/ai-character-site.png"
+                    alt="AI Characters website"
+                    fill
+                    className="object-cover"
+                  />
+                </div>
+                  <div className="w-full sm:w-2/3">
+                    <h3 className="text-md font-bold text-black dark:text-white mb-2">
+                      AI Characters Portfolio Website
+                    </h3>
+                    <div className="flex gap-4 mb-3">
+                      <a
+                        href="https://cecilialopez.dev/ai-characters/"
+                        className="text-sm text-gray-500 dark:text-gray-400 hover:text-gray-700 dark:hover:text-gray-300 flex items-center gap-1"
+                      >
+                        Website
+                        <svg
+                          className="w-3 h-3"
+                          fill="none"
+                          stroke="currentColor"
+                          viewBox="0 0 24 24"
+                        >
+                          <path
+                            strokeLinecap="round"
+                            strokeLinejoin="round"
+                            strokeWidth={2}
+                            d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"
+                          />
+                        </svg>
+                      </a>
+                      <a
+                        href="https://github.com/cerolopez/pro-website-2.0"
+                        className="text-sm text-gray-500 dark:text-gray-400 hover:text-gray-700 dark:hover:text-gray-300 flex items-center gap-1"
+                      >
+                        GitHub
+                        <svg
+                          className="w-3 h-3"
+                          fill="none"
+                          stroke="currentColor"
+                          viewBox="0 0 24 24"
+                        >
+                          <path
+                            strokeLinecap="round"
+                            strokeLinejoin="round"
+                            strokeWidth={2}
+                            d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"
+                          />
+                        </svg>
+                      </a>
+                      <a
+                        href="https://www.figma.com/design/NWzQysngTRDaNyNLUfsBAG/AI-Character-UI?node-id=0-1&t=E9hA5OunRtMchxdo-1"
+                        className="text-sm text-gray-500 dark:text-gray-400 hover:text-gray-700 dark:hover:text-gray-300 flex items-center gap-1"
+                      >
+                        Figma
+                        <svg
+                          className="w-3 h-3"
+                          fill="none"
+                          stroke="currentColor"
+                          viewBox="0 0 24 24"
+                        >
+                          <path
+                            strokeLinecap="round"
+                            strokeLinejoin="round"
+                            strokeWidth={2}
+                            d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"
+                          />
+                        </svg>
+                      </a>
+                    </div>
+                    <p className="text-sm text-black dark:text-gray-300 mb-3">
+                      This is a subsection of my professional website that showcases my AI characters and their capabilities. It includes a blog section for updates.
+                    </p>
+                    <div className="flex flex-wrap gap-2">
+                      <span className="px-3 py-1 rounded-full bg-gray-100 dark:bg-gray-700 text-xs text-gray-700 dark:text-gray-300">
+                        OpenAI API
+                      </span>
+                      <span className="px-3 py-1 rounded-full bg-gray-100 dark:bg-gray-700 text-xs text-gray-700 dark:text-gray-300">
+                        Prompt Engineering
+                      </span>
+                      <span className="px-3 py-1 rounded-full bg-gray-100 dark:bg-gray-700 text-xs text-gray-700 dark:text-gray-300">
+                        LLM Chatbot
+                      </span>
+                      <span className="px-3 py-1 rounded-full bg-gray-100 dark:bg-gray-700 text-xs text-gray-700 dark:text-gray-300">
+                        Full Stack Development
+                      </span>
+                      <span className="px-3 py-1 rounded-full bg-gray-100 dark:bg-gray-700 text-xs text-gray-700 dark:text-gray-300">
+                        UX Design
+                      </span>
+                      <span className="px-3 py-1 rounded-full bg-gray-100 dark:bg-gray-700 text-xs text-gray-700 dark:text-gray-300">
+                        Content Strategy
+                      </span>
+                    </div>
+                  </div>
+                </div>
+
+                {/* Project 2: Behalf Bot */}
                 <div className="flex flex-col sm:flex-row gap-6">
                 <div className="w-32 h-20 md:w-40 md:h-24 lg:w-48 lg:h-28 flex-shrink-0 relative overflow-hidden">
                   <Image
@@ -309,7 +408,7 @@ export default function Home() {
                   </div>
                 </div>
 
-                {/* Project 2: Professional Website 2.0 */}
+                {/* Project 3: Professional Website 2.0 */}
                 <div className="flex flex-col sm:flex-row gap-6">
                 <div className="w-32 h-20 md:w-40 md:h-24 lg:w-48 lg:h-28 flex-shrink-0 relative overflow-hidden">
                   <Image

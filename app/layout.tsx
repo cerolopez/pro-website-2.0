@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
-import Navigation from "./components/Navigation";
+import ConditionalNavigation from "./components/ConditionalNavigation";
 
 const inter = Inter({
   variable: "--font-inter",
@@ -23,7 +23,7 @@ export default function RootLayout({
       <body
         className={`${inter.variable} antialiased`}
       >
-        <Navigation />
+        <ConditionalNavigation />
         {children}
       </body>
     </html>

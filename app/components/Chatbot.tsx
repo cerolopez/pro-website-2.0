@@ -1,6 +1,7 @@
 'use client';
 
 import { useState, useRef, useEffect } from 'react';
+import Modal from './Modal';
 
 interface Message {
   id: string;
@@ -65,16 +66,6 @@ export default function Chatbot() {
     previousHasMessagesRef.current = hasMessages;
   }, [messages.length, isLoading]);
 
-  useEffect(() => {
-    // Close modal on Escape key
-    const handleEscape = (e: KeyboardEvent) => {
-      if (e.key === 'Escape' && isModalOpen) {
-        setIsModalOpen(false);
-      }
-    };
-    window.addEventListener('keydown', handleEscape);
-    return () => window.removeEventListener('keydown', handleEscape);
-  }, [isModalOpen]);
 
   const handleSend = async () => {
     if (!input.trim() || isLoading) return;
@@ -220,62 +211,29 @@ export default function Chatbot() {
       </button>
 
       {/* Modal */}
-      {isModalOpen && (
-        <div
-          className="fixed inset-0 z-50 flex items-center justify-center p-4"
-          style={{ backgroundColor: 'rgba(0, 0, 0, 0.5)' }}
-          onClick={() => setIsModalOpen(false)}
-        >
-          <div
-            className="bg-white dark:bg-gray-800 rounded-lg shadow-xl max-w-2xl w-full max-h-[90vh] overflow-y-auto p-6"
-            onClick={(e) => e.stopPropagation()}
-          >
-            <div className="flex justify-between items-start mb-4">
-              <h2 className="text-2xl font-bold text-black dark:text-white pt-8 pl-8">
-                Meet Behalf Bot 🤖
-              </h2>
-              <button
-                onClick={() => setIsModalOpen(false)}
-                className="text-gray-500 dark:text-gray-400 hover:text-gray-700 dark:hover:text-gray-200 transition-colors"
-                aria-label="Close modal"
-              >
-                <svg
-                  className="w-6 h-6"
-                  fill="none"
-                  stroke="currentColor"
-                  viewBox="0 0 24 24"
-                >
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    strokeWidth={2}
-                    d="M6 18L18 6M6 6l12 12"
-                  />
-                </svg>
-              </button>
-            </div>
-            <div className="text-gray-700 dark:text-gray-300 space-y-4 text-left px-8 pb-8">
-              <p className="text-left">
-                Behalf Bot is a GPT-4 chatbot instructed to answer career questions on behalf of Cecilia. It can tell you about her full employment history, academic career, online courses, certifications, skills, projects, referrals, and professional anecdotes.
-              </p>
-              <div className="text-left">
-                <p className="font-semibold mb-2 text-black dark:text-white text-left">
-                  Here are some examples of questions you can ask:
-                </p>
-                <ul className="list-disc list-inside space-y-1 ml-4 text-left">
-                  <li className="text-left">Can you tell me about Cecilia's experience with prompt engineering?</li>
-                  <li className="text-left">Does Cecilia have experience leading projects?</li>
-                  <li className="text-left">What are some of Cecilia's biggest strengths?</li>
-                  <li className="text-left">Can you tell me about Cecilia's leadership skills?</li>
-                </ul>
-              </div>
-              <p className="text-gray-700 dark:text-gray-300 text-left">
-                This bot does not store user data.
-              </p>
-            </div>
-          </div>
+      <Modal
+        isOpen={isModalOpen}
+        onClose={() => setIsModalOpen(false)}
+        title="Meet Behalf Bot 🤖"
+      >
+        <p className="text-left">
+          Behalf Bot is a GPT-4 chatbot instructed to answer career questions on behalf of Cecilia. It can tell you about her full employment history, academic career, online courses, certifications, skills, projects, referrals, and professional anecdotes.
+        </p>
+        <div className="text-left">
+          <p className="font-semibold mb-2 text-black dark:text-white text-left">
+            Here are some examples of questions you can ask:
+          </p>
+          <ul className="list-disc list-inside space-y-1 ml-4 text-left">
+            <li className="text-left">Can you tell me about Cecilia's experience with prompt engineering?</li>
+            <li className="text-left">Does Cecilia have experience leading projects?</li>
+            <li className="text-left">What are some of Cecilia's biggest strengths?</li>
+            <li className="text-left">Can you tell me about Cecilia's leadership skills?</li>
+          </ul>
         </div>
-      )}
+        <p className="text-gray-700 dark:text-gray-300 text-left">
+          This bot does not store user data.
+        </p>
+      </Modal>
     </div>
   );
 }
