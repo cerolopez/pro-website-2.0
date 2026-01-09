@@ -38,7 +38,7 @@ export default function Home() {
                 <div className="flex flex-col sm:flex-row gap-6">
                   <div className="w-full sm:w-1/3 sm:flex-shrink-0">
                     <p className="text-sm text-gray-500 dark:text-gray-400 text-left">
-                      August 2025 – October 2025
+                      August 2025 - October 2025
                     </p>
                   </div>
                   <div className="w-full sm:w-2/3">
@@ -46,7 +46,7 @@ export default function Home() {
                       AI/Prompt Engineer - Fleek
                     </h3>
                     <p className="text-sm text-black dark:text-gray-300 mb-3">
-                      Developing system instructions for AI character creation flow, including AI image generation and LLM chat. Bridging the gap between product and engineering by refining UX flows to be developer- and user-friendly
+                      Developed system instructions for AI character creation flow, including AI image generation and LLM chat. Bridged the gap between product and engineering by developing project management system in Linear, leading to first successful product launch.
                     </p>
                     <div className="flex flex-wrap gap-2">
                       <span className="px-3 py-1 rounded-full bg-gray-100 dark:bg-gray-700 text-xs text-gray-700 dark:text-gray-300">
@@ -58,6 +58,9 @@ export default function Home() {
                       <span className="px-3 py-1 rounded-full bg-gray-100 dark:bg-gray-700 text-xs text-gray-700 dark:text-gray-300">
                         AI Image Gen
                       </span>
+                      <span className="px-3 py-1 rounded-full bg-gray-100 dark:bg-gray-700 text-xs text-gray-700 dark:text-gray-300">
+                        Developer Management
+                      </span>
                     </div>
                   </div>
                 </div>
@@ -66,7 +69,7 @@ export default function Home() {
                 <div className="flex flex-col sm:flex-row gap-6">
                   <div className="w-full sm:w-1/3 sm:flex-shrink-0">
                     <p className="text-sm text-gray-500 dark:text-gray-400 text-left">
-                      May 2025 – August 2025
+                      May 2025 - August 2025
                     </p>
                   </div>
                   <div className="w-full sm:w-2/3">
@@ -94,7 +97,7 @@ export default function Home() {
                 <div className="flex flex-col sm:flex-row gap-6">
                   <div className="w-full sm:w-1/3 sm:flex-shrink-0">
                     <p className="text-sm text-gray-500 dark:text-gray-400 text-left">
-                      May 2024 – May 2025
+                      May 2024 - May 2025
                     </p>
                   </div>
                   <div className="w-full sm:w-2/3">
@@ -152,10 +155,10 @@ export default function Home() {
                   </div>
                   <div className="w-full sm:w-2/3">
                     <h3 className="text-md font-bold text-black dark:text-white mb-2">
-                      Content Strategist/Manager - Meta
+                      Web Content Manager - Meta
                     </h3>
                     <p className="text-sm text-black dark:text-gray-300 mb-3">
-                    Led large-scale website initiatives and UX optimization projects for the Meta Research site in collaboration with web vendors. Developed content strategy for the Meta Research blog in collaboration with program managers and research teams. Earned promotion in 2021.
+                    Led large-scale website initiatives and UX optimization projects for the Meta Research website in collaboration with web vendors. Developed content strategy for the Meta Research blog in collaboration with program managers and research teams. Earned promotion in 2021.
                     </p>
                     <div className="flex flex-wrap gap-2">
                       <span className="px-3 py-1 rounded-full bg-gray-100 dark:bg-gray-700 text-xs text-gray-700 dark:text-gray-300">
@@ -216,107 +219,9 @@ export default function Home() {
 
             <section id="projects" className="pb-16 pt-8 scroll-mt-16 mx-4 md:mx-8 lg:mx-16">
               <h2 className="text-3xl font-bold mb-12 text-center text-black dark:text-white">
-                Projects
+                Portfolio
               </h2>
               <div className="space-y-12">
-                {/* Project 1: AI Characters */}
-                <div className="flex flex-col sm:flex-row gap-6">
-                <div className="w-32 h-20 md:w-40 md:h-24 lg:w-48 lg:h-28 flex-shrink-0 relative overflow-hidden shadow-lg">
-                  <Image
-                    src="/ai-character-site.png"
-                    alt="AI Characters website"
-                    fill
-                    className="object-cover"
-                  />
-                </div>
-                  <div className="w-full sm:w-2/3">
-                    <h3 className="text-md font-bold text-black dark:text-white mb-2">
-                      AI Characters Portfolio Website
-                    </h3>
-                    <div className="flex gap-4 mb-3">
-                      <a
-                        href="https://cecilialopez.dev/ai-characters/"
-                        className="text-sm text-gray-500 dark:text-gray-400 hover:text-gray-700 dark:hover:text-gray-300 flex items-center gap-1"
-                      >
-                        Website
-                        <svg
-                          className="w-3 h-3"
-                          fill="none"
-                          stroke="currentColor"
-                          viewBox="0 0 24 24"
-                        >
-                          <path
-                            strokeLinecap="round"
-                            strokeLinejoin="round"
-                            strokeWidth={2}
-                            d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"
-                          />
-                        </svg>
-                      </a>
-                      <a
-                        href="https://github.com/cerolopez/pro-website-2.0"
-                        className="text-sm text-gray-500 dark:text-gray-400 hover:text-gray-700 dark:hover:text-gray-300 flex items-center gap-1"
-                      >
-                        GitHub
-                        <svg
-                          className="w-3 h-3"
-                          fill="none"
-                          stroke="currentColor"
-                          viewBox="0 0 24 24"
-                        >
-                          <path
-                            strokeLinecap="round"
-                            strokeLinejoin="round"
-                            strokeWidth={2}
-                            d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"
-                          />
-                        </svg>
-                      </a>
-                      <a
-                        href="https://www.figma.com/design/NWzQysngTRDaNyNLUfsBAG/AI-Character-UI?node-id=0-1&t=E9hA5OunRtMchxdo-1"
-                        className="text-sm text-gray-500 dark:text-gray-400 hover:text-gray-700 dark:hover:text-gray-300 flex items-center gap-1"
-                      >
-                        Figma
-                        <svg
-                          className="w-3 h-3"
-                          fill="none"
-                          stroke="currentColor"
-                          viewBox="0 0 24 24"
-                        >
-                          <path
-                            strokeLinecap="round"
-                            strokeLinejoin="round"
-                            strokeWidth={2}
-                            d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"
-                          />
-                        </svg>
-                      </a>
-                    </div>
-                    <p className="text-sm text-black dark:text-gray-300 mb-3">
-                      This is a subsection of my professional website that showcases my AI characters and their capabilities. It includes a blog section for updates.
-                    </p>
-                    <div className="flex flex-wrap gap-2">
-                      <span className="px-3 py-1 rounded-full bg-gray-100 dark:bg-gray-700 text-xs text-gray-700 dark:text-gray-300">
-                        OpenAI API
-                      </span>
-                      <span className="px-3 py-1 rounded-full bg-gray-100 dark:bg-gray-700 text-xs text-gray-700 dark:text-gray-300">
-                        Prompt Engineering
-                      </span>
-                      <span className="px-3 py-1 rounded-full bg-gray-100 dark:bg-gray-700 text-xs text-gray-700 dark:text-gray-300">
-                        LLM Chatbot
-                      </span>
-                      <span className="px-3 py-1 rounded-full bg-gray-100 dark:bg-gray-700 text-xs text-gray-700 dark:text-gray-300">
-                        Full Stack Development
-                      </span>
-                      <span className="px-3 py-1 rounded-full bg-gray-100 dark:bg-gray-700 text-xs text-gray-700 dark:text-gray-300">
-                        UX Design
-                      </span>
-                      <span className="px-3 py-1 rounded-full bg-gray-100 dark:bg-gray-700 text-xs text-gray-700 dark:text-gray-300">
-                        Content Strategy
-                      </span>
-                    </div>
-                  </div>
-                </div>
 
                 {/* Project 2: Behalf Bot */}
                 <div className="flex flex-col sm:flex-row gap-6">
@@ -392,7 +297,7 @@ export default function Home() {
                       </a>
                     </div>
                     <p className="text-sm text-black dark:text-gray-300 mb-3">
-                      Building off OpenAI's GPT-4, I curated responses by crafting instructions based off various use cases, providing data available on my LinkedIn and website. I built the chatbot UI on Flask using Python for the backend and vanilla JavaScript, and HTML/CSS for the frontend. I also made an API to use on this website.
+                      As a personal project, I built a chatbot that answers career questions on my behalf. The prompt I wrote instructs GPT-4 to answer questions based off various use cases, referencing content from my LinkedIn and website.
                     </p>
                     <div className="flex flex-wrap gap-2">
                       <span className="px-3 py-1 rounded-full bg-gray-100 dark:bg-gray-700 text-xs text-gray-700 dark:text-gray-300">
@@ -463,17 +368,167 @@ export default function Home() {
                       </a>
                     </div>
                     <p className="text-sm text-black dark:text-gray-300 mb-3">
-                      Using Cursor as my AI coding assistant, I designed and built a new professional website (this one!) from scratch using React, Next.js, Tailwind CSS, and TypeScript. I also added a new chatbot feature on the website using the Behalf Bot API.
+                      As a personal UX design challenge, I developed a new professional website in Figma that seamlessly integrates the chatbot I built, Behalf Bot. I researched other websites to understand how chatbot integration is handled, then developed my own hybrid approach that minimizes visual disruption to the user.
                     </p>
                     <div className="flex flex-wrap gap-2">
                       <span className="px-3 py-1 rounded-full bg-gray-100 dark:bg-gray-700 text-xs text-gray-700 dark:text-gray-300">
-                        Web Development
+                        UX Design
                       </span>
                       <span className="px-3 py-1 rounded-full bg-gray-100 dark:bg-gray-700 text-xs text-gray-700 dark:text-gray-300">
-                        Figma Prototyping
+                        HCI Best Practices
                       </span>
                       <span className="px-3 py-1 rounded-full bg-gray-100 dark:bg-gray-700 text-xs text-gray-700 dark:text-gray-300">
                         LLM Chatbot
+                      </span>
+                    </div>
+                  </div>
+                </div>
+                {/* Project 1: AI Characters */}
+                <div className="flex flex-col sm:flex-row gap-6">
+                <div className="w-32 h-20 md:w-40 md:h-24 lg:w-48 lg:h-28 flex-shrink-0 relative overflow-hidden shadow-lg">
+                  <Image
+                    src="/ai-character-site.png"
+                    alt="AI Characters website"
+                    fill
+                    className="object-cover"
+                  />
+                </div>
+                  <div className="w-full sm:w-2/3">
+                    <h3 className="text-md font-bold text-black dark:text-white mb-2">
+                      AI Character Subsite
+                    </h3>
+                    <div className="flex gap-4 mb-3">
+                      <a
+                        href="https://cecilialopez.dev/ai-characters/"
+                        className="text-sm text-gray-500 dark:text-gray-400 hover:text-gray-700 dark:hover:text-gray-300 flex items-center gap-1"
+                      >
+                        Website
+                        <svg
+                          className="w-3 h-3"
+                          fill="none"
+                          stroke="currentColor"
+                          viewBox="0 0 24 24"
+                        >
+                          <path
+                            strokeLinecap="round"
+                            strokeLinejoin="round"
+                            strokeWidth={2}
+                            d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"
+                          />
+                        </svg>
+                      </a>
+                      <a
+                        href="https://github.com/cerolopez/pro-website-2.0"
+                        className="text-sm text-gray-500 dark:text-gray-400 hover:text-gray-700 dark:hover:text-gray-300 flex items-center gap-1"
+                      >
+                        GitHub
+                        <svg
+                          className="w-3 h-3"
+                          fill="none"
+                          stroke="currentColor"
+                          viewBox="0 0 24 24"
+                        >
+                          <path
+                            strokeLinecap="round"
+                            strokeLinejoin="round"
+                            strokeWidth={2}
+                            d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"
+                          />
+                        </svg>
+                      </a>
+                      <a
+                        href="https://www.figma.com/design/NWzQysngTRDaNyNLUfsBAG/AI-Character-UI?node-id=0-1&t=E9hA5OunRtMchxdo-1"
+                        className="text-sm text-gray-500 dark:text-gray-400 hover:text-gray-700 dark:hover:text-gray-300 flex items-center gap-1"
+                      >
+                        Figma
+                        <svg
+                          className="w-3 h-3"
+                          fill="none"
+                          stroke="currentColor"
+                          viewBox="0 0 24 24"
+                        >
+                          <path
+                            strokeLinecap="round"
+                            strokeLinejoin="round"
+                            strokeWidth={2}
+                            d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"
+                          />
+                        </svg>
+                      </a>
+                    </div>
+                    <p className="text-sm text-black dark:text-gray-300 mb-3">
+                      To showcase my prompt engineering skills, I designed and developed a subsection of this website where people can learn about and interact with the AI characters that I develop. It also includes a blog section for updates.
+                    </p>
+                    <div className="flex flex-wrap gap-2">
+                      <span className="px-3 py-1 rounded-full bg-gray-100 dark:bg-gray-700 text-xs text-gray-700 dark:text-gray-300">
+                        Anthropic API
+                      </span>
+                      <span className="px-3 py-1 rounded-full bg-gray-100 dark:bg-gray-700 text-xs text-gray-700 dark:text-gray-300">
+                        Prompt Engineering
+                      </span>
+                      <span className="px-3 py-1 rounded-full bg-gray-100 dark:bg-gray-700 text-xs text-gray-700 dark:text-gray-300">
+                        LLM Chatbot
+                      </span>
+                      <span className="px-3 py-1 rounded-full bg-gray-100 dark:bg-gray-700 text-xs text-gray-700 dark:text-gray-300">
+                        UX Design
+                      </span>
+                      <span className="px-3 py-1 rounded-full bg-gray-100 dark:bg-gray-700 text-xs text-gray-700 dark:text-gray-300">
+                        Content Strategy
+                      </span>
+                    </div>
+                  </div>
+                </div>
+
+                {/* Project 4: Meta Research Website */}
+                <div className="flex flex-col sm:flex-row gap-6">
+                <div className="w-32 h-20 md:w-40 md:h-24 lg:w-48 lg:h-28 flex-shrink-0 relative overflow-hidden shadow-lg">
+                  <Image
+                    src="/meta-research.png"
+                    alt="Meta Research Website project"
+                    fill
+                    className="object-cover"
+                  />
+                </div>
+                  <div className="w-full sm:w-2/3">
+                    <h3 className="text-md font-bold text-black dark:text-white mb-2">
+                      Meta Research Website
+                    </h3>
+                    <div className="flex gap-4 mb-3">
+                      <a
+                        href="https://research.facebook.com/"
+                        className="text-sm text-gray-500 dark:text-gray-400 hover:text-gray-700 dark:hover:text-gray-300 flex items-center gap-1"
+                      >
+                        Website
+                        <svg
+                          className="w-3 h-3"
+                          fill="none"
+                          stroke="currentColor"
+                          viewBox="0 0 24 24"
+                        >
+                          <path
+                            strokeLinecap="round"
+                            strokeLinejoin="round"
+                            strokeWidth={2}
+                            d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"
+                          />
+                        </svg>
+                      </a>
+                    </div>
+                    <p className="text-sm text-black dark:text-gray-300 mb-3">
+                      From 2018 to 2023, I led content strategy and management for the Meta Research website, which included the blog. During my tenure, I partnered with writers, program managers, research teams, designers, and web developers to create and manage web content.
+                    </p>
+                    <div className="flex flex-wrap gap-2">
+                      <span className="px-3 py-1 rounded-full bg-gray-100 dark:bg-gray-700 text-xs text-gray-700 dark:text-gray-300">
+                        Content Strategy
+                      </span>
+                      <span className="px-3 py-1 rounded-full bg-gray-100 dark:bg-gray-700 text-xs text-gray-700 dark:text-gray-300">
+                        Web Content Management
+                      </span>
+                      <span className="px-3 py-1 rounded-full bg-gray-100 dark:bg-gray-700 text-xs text-gray-700 dark:text-gray-300">
+                        UX Design
+                      </span>
+                      <span className="px-3 py-1 rounded-full bg-gray-100 dark:bg-gray-700 text-xs text-gray-700 dark:text-gray-300">
+                        Web Dev Management
                       </span>
                     </div>
                   </div>

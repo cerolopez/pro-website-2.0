@@ -41,7 +41,7 @@ export default function Navigation() {
               onClick={(e) => handleAnchorClick(e, '#projects')}
               className="text-gray-700 dark:text-gray-300 font-sans hover:text-gray-900 dark:hover:text-gray-100 transition-colors"
             >
-              Projects
+              Portfolio
             </a>
           </div>
           <div className="hidden sm:flex flex-1"></div>
